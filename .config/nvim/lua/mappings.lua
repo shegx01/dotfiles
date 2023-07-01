@@ -3,15 +3,15 @@ vim.g.maplocalleader = " "
 
 local opts = { silent = true, noremap = true }
 
--- General movements
-vim.keymap.set("", "j", "h", opts)
-vim.keymap.set("", "k", "j", opts)
-vim.keymap.set("", "l", "k", opts)
-vim.keymap.set("", "ö", "l", opts)
-vim.keymap.set("", "ß", "$", opts)
+-- -- General movements
+-- vim.keymap.set("", "j", "h", opts)
+-- vim.keymap.set("", "k", "j", opts)
+-- vim.keymap.set("", "l", "k", opts)
+-- vim.keymap.set("", "ö", "l", opts)
+-- vim.keymap.set("", "ß", "$", opts)
 vim.keymap.set("", "Y", "y$", opts)
-vim.keymap.set("", "ä", "za", opts)
-vim.keymap.set("", "Ä", "zR", opts)
+vim.keymap.set("", "a", "za", opts)
+vim.keymap.set("", "A", "zR", opts)
 
 -- Save and quit
 vim.keymap.set("n", "s", ":w<CR>", opts)
@@ -23,6 +23,10 @@ vim.keymap.set("n", "<C-Left>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-Down>", "<C-w>j", opts)
 vim.keymap.set("n", "<C-Up>", "<C-w>k", opts)
 vim.keymap.set("n", "<C-Right>", "<C-w>l", opts)
+-- vim.keymap.set("n", "<C-Left>", "<C-w>h", opts)
+-- vim.keymap.set("n", "<C-Down>", "<C-w>j", opts)
+-- vim.keymap.set("n", "<C-Up>", "<C-w>k", opts)
+-- vim.keymap.set("n", "<C-Right>", "<C-w>l", opts)
 
 -- Telescope
 vim.keymap.set("n", "<leader>fw", ':lua require("telescope")<CR> <cmd>Telescope live_grep<cr>', opts)

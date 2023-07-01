@@ -108,13 +108,13 @@ def status(status):
 bar = {"A": [" ", status], "C": [time]}
 
 keybindings = {
-        "move down": "k",
-        "shift down": "K",
-        "move up": "l",
-        "shift up": "L",
+        "move down": "j",
+        "shift down": "J",
+        "move up": "k",
+        "shift up": "K",
         "move to top": "gg",
         "exit": "Q",
-        "switch pane": ["j", "ö"],
-        "toggle expand": "ä",
-        "toggle expand parent": "Ä"
+        "switch pane": ["j", "\""],
+        "toggle expand": "|",
+        "toggle expand parent": ":"
 }

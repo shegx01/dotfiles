@@ -54,10 +54,10 @@ brew install btop
 
 # Brew Casks
 echo "Installing Brew Casks..."
-brew install --cask inkscape
-brew install --cask moonlight
-brew install --cask mumble
-brew install --cask libreoffice
+# brew install --cask inkscape
+# brew install --cask moonlight
+# brew install --cask mumble
+# brew install --cask libreoffice
 brew install --cask alacritty
 brew install --cask spotify
 brew install --cask monitorcontrol
@@ -71,12 +71,13 @@ brew install --cask cutter
 brew install --cask font-hack-nerd-font
 brew install --cask vlc
 brew install --cask wezterm
+brew install --cask warp
 
 # Mac App Store Apps
 echo "Installing Mac App Store Apps..."
 mas install 1451685025 #Wireguard
 mas install 497799835 #xCode
-mas install 1480933944 #Vimari
+# mas install 1480933944 #Vimari
 
 # macOS Settings
 echo "Changing macOS defaults..."
@@ -118,8 +119,8 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Copying and checking out configuration files
 echo "Planting Configuration Files..."
-[ ! -d "$HOME/dotfiles" ] && git clone --bare git@github.com:FelixKratz/dotfiles.git $HOME/dotfiles
-git --git-dir=$HOME/dotfiles/ --work-tree=$HOME checkout master
+[ ! -d "$HOME/dotfiles" ] && git clone --bare git@github.com:shegx01/dotfiles.git $HOME/dotfiles
+git --git-dir=$HOME/dotfiles/ --work-tree=$HOME checkout shegx01
 
 # Installing Fonts
 git clone git@github.com:shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
