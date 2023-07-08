@@ -42,8 +42,8 @@ brew install dooit
 brew install alfred
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
-brew install fskhd --head
-brew install fyabai --head
+brew install skhd 
+brew install yabai
 brew install fnnn --head
 brew install sketchybar
 brew install svim
@@ -59,7 +59,7 @@ echo "Installing Brew Casks..."
 # brew install --cask moonlight
 # brew install --cask mumble
 # brew install --cask libreoffice
-brew install --cask alacritty
+# brew install --cask alacritty
 brew install --cask spotify
 brew install --cask monitorcontrol
 brew install --cask sloth
@@ -71,13 +71,13 @@ brew install --cask hex-fiend
 brew install --cask cutter
 brew install --cask font-hack-nerd-font
 brew install --cask vlc
-brew install --cask wezterm
+# brew install --cask wezterm
 brew install --cask warp
 
 # Mac App Store Apps
-echo "Installing Mac App Store Apps..."
-mas install 1451685025 #Wireguard
-mas install 497799835 #xCode
+# echo "Installing Mac App Store Apps..."
+# mas install 1451685025 #Wireguard
+# mas install 497799835 #xCode
 # mas install 1480933944 #Vimari
 
 # macOS Settings
@@ -153,7 +153,8 @@ pip install sklearn
 # Start Services
 echo "Starting Services (grant permissions)..."
 brew services start skhd
-brew services start fyabai
+yabai --start-service
+skhd --start-service
 brew services start sketchybar
 brew services start svim
 
