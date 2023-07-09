@@ -52,6 +52,7 @@ brew install switchaudio-osx
 brew install lazygit
 brew install btop
 brew install tmux
+brew install asdf
 
 # Brew Casks
 echo "Installing Brew Casks..."
@@ -129,6 +130,12 @@ mv /tmp/SFMono_Nerd_Font/* $HOME/Library/Fonts
 rm -rf /tmp/SFMono_Nerd_Font/
 
 curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.4/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
+
+git clone git@github.com:jonasdiemer/EurKEY-Mac.git /tmp/EurKEY_Mac
+# you need to use superuser to enable sitewide keyboard layout usage
+# don't forget to set the layout in preference after intallation
+# Password is also required for installation
+sudo mv /tmp/EurKEY_Mac/* ~/Library/Keyboard\ Layouts
 
 source $HOME/.zshrc
 cfg config --local status.showUntrackedFiles no
