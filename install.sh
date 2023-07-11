@@ -53,6 +53,7 @@ brew install lazygit
 brew install btop
 brew install tmux
 brew install asdf
+brew install pidof
 
 # Brew Casks
 echo "Installing Brew Casks..."
