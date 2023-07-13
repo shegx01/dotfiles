@@ -58,7 +58,7 @@ function zen () {
 }
 
 function kill () {
-  command kill -KILL $(pidof "$@")
+  command kill -KILL $(pgrep "$@" | tr '\n' ' ' | xargs)
 }
 
 function suyabai () {
