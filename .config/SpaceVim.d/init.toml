@@ -1,0 +1,103 @@
+[[layers]]
+  name = "colorscheme"
+
+[[layers]]
+  name = 'core'
+  filetree_show_hidden = true
+  enable_smooth_scrolling = true
+
+[[layers]]
+  name = "lang#zig"
+
+[[layers]]
+  name = "lang#dockerfile"
+
+[[layers]]
+  name = "lang#elixir"
+
+[[layers]]
+  name = "lang#erlang"
+
+[[layers]]
+  name = "lang#extra"
+
+[[layers]]
+  name = "lang#graphql"
+
+# html as a language
+# LSP layer needs to be installed
+[[layers]]
+  name = "lang#html"
+  emmet_leader_key = "<C-e>"
+  emmet_filetyps = ['html']
+
+[[layers]]
+  name = "lang#javascript"
+  autofix = true
+  format_on_save = true
+
+[[layers]]
+  name = "lang#json"
+
+[[layers]]
+  name = "lang#lua"
+
+[[layers]]
+  name = "lang#markdown"
+
+[[layers]]
+  name = "lang#rust"
+  format_on_save = true
+  
+[[layers]]
+name = "lang#toml"
+
+[[layers]]
+  name = "lang#vue"
+
+[[layers]]
+  name = "shell"
+  default_position = "top"
+  default_height = 38
+
+[[layers]]
+  name = "telescope"
+# TODO configure test layers
+[[layers]]
+  name = "test"
+
+[[layers]]
+  name = "tmux"  
+  # tmux_navigator_modifier = "alt"
+
+[[layers]]
+name = "tools#dash"
+
+[[layers]]
+  name = "VersionControl"
+  enable-gtm-status = true
+
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[options]
+ # set spacevim theme. by default colorscheme layer is not loaded,
+ # if you want to use more colorscheme, please load the colorscheme
+ # layer
+ colorscheme = "material"
+ colorscheme_bg = "dark"
+ # Disable guicolors in basic mode, many terminal do not support 24bit
+ # true colors
+ enable_guicolors = true
+ # Disable statusline separator, if you want to use other value, please
+ # install nerd fonts
+ statusline_separator = "arrow"
+ statusline_iseparator = "arrow"
+ buffer_index_type = 4
+ enable_tabline_filetype_icon = true
+ enable_statusline_mode = false 
+ filetree_opened_icon = ''
+ filetree_closed_icon = ''
+ enable_vimfiler_welcome = false
