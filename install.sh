@@ -143,7 +143,7 @@ sudo mv /tmp/EurKEY_Mac/* ~/Library/Keyboard\ Layouts
 git clone git clone https://github.com/SpaceVim/SpaceVim.git ~/.SpaceVim
 ln -s ~/.SpaceVim ~/.vim 
 ln -s ~/.SpaceVim ~/.config/nvim
-ln -s ~/.SpaceVim.d/init.toml ~/.config/spacevim.toml
+#ln -s ~/.SpaceVim.d/init.toml ~/.config/spacevim.toml
 # TODO! Plant config file for spacevim
 asdf plugin add nodejs
 asdf plugin add erlang
