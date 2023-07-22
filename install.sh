@@ -13,7 +13,7 @@ brew analytics off
 echo "Installing Brew Formulae..."
 brew tap homebrew/cask-fonts
 brew tap FelixKratz/formulae
-
+brew tap git-time-metric/gtm
 # Brew Formulae
 brew install gsl
 brew install llvm
@@ -54,6 +54,7 @@ brew install btop
 brew install tmux
 brew install asdf
 #brew install pidof
+brew install gtm
 
 # Brew Casks
 echo "Installing Brew Casks..."
@@ -138,25 +139,30 @@ git clone git@github.com:jonasdiemer/EurKEY-Mac.git /tmp/EurKEY_Mac
 # Password is also required for installation
 sudo mv /tmp/EurKEY_Mac/* ~/Library/Keyboard\ Layouts
 
+# setup spacevim
+git clone git clone https://github.com/SpaceVim/SpaceVim.git ~/.SpaceVim
+ln -s ~/.SpaceVim ~/.vim 
+ln -s ~/.SpaceVim ~/.config/nvim
+ln -s ~/.SpaceVim.d/init.toml ~/.config/spacevim.toml
+# TODO! Plant config file for spacevim
+asdf plugin add nodejs
+asdf plugin add erlang
+asdf plugin add elixir 
+asdf plugin add rust 
+asdf plugin add rust-analyser 
+asdf install nodejs latest
+asdf install erlang latest
+asdf install elixir latest
+asdf install rust latest
+asdf install  latest
+asdf global erlang latest
+asdf global elixir latest
+asdf global nodejs latest
+# Nodejs Installs
+npm -g install remark remark-cli remark-stringify remark-frontmatter wcwidth  eslint eslint-plugin-vue
 source $HOME/.zshrc
 cfg config --local status.showUntrackedFiles no
 
-# Python Packages
-echo "Installing Python Packages..."
-curl https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh | sh
-source $HOME/.zshrc
-conda install -c apple tensorflow-deps
-conda install -c conda-forge pybind11
-conda install matplotlib
-conda install jupyterlab
-conda install seaborn
-conda install opencv
-conda install joblib
-conda install pytables
-pip install tensorflow-macos
-pip install tensorflow-metal
-pip install debugpy
-pip install sklearn
 
 # Start Services
 echo "Starting Services (grant permissions)..."
