@@ -77,6 +77,11 @@ brew install --cask vlc
 # brew install --cask wezterm
 brew install --cask warp
 
+brew install -f gdu
+brew link --overwrite gdu  # if you have coreutils installed as well
+brew install bottom # Process viewer like btop cmd = btm
+
+
 # Mac App Store Apps
 # echo "Installing Mac App Store Apps..."
 # mas install 1451685025 #Wireguard
@@ -139,12 +144,11 @@ git clone git@github.com:jonasdiemer/EurKEY-Mac.git /tmp/EurKEY_Mac
 # Password is also required for installation
 sudo mv /tmp/EurKEY_Mac/* ~/Library/Keyboard\ Layouts
 
-# setup spacevim
-git clone git clone https://github.com/SpaceVim/SpaceVim.git ~/.SpaceVim
-ln -s ~/.SpaceVim ~/.vim 
-ln -s ~/.SpaceVim ~/.config/nvim
-#ln -s ~/.SpaceVim.d/init.toml ~/.config/spacevim.toml
-# TODO! Plant config file for spacevim
+# Install doom emacs
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+echo ~/.config/emacs/bin/doom >> ~/.zshrc
+
 asdf plugin add nodejs
 asdf plugin add erlang
 asdf plugin add elixir 
